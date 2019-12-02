@@ -1,0 +1,23 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+cloud:
+  aws:
+    credentials:
+      access-key:
+      secret-key:
+      instance-profile: false
+    region:
+      auto: false
+      static: eu-west-1
+    stack:
+      auto: false
+
+sqs:
+  url: http://localhost:4576
+  queue: test_queue
+  max-message: 10
+
